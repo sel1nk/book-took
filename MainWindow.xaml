@@ -66,7 +66,9 @@
                 <Hyperlink Click="GoToCategories_Click">Categories</Hyperlink>
             </TextBlock>
         </StackPanel>
-
+        <Button Content="Show Titles" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="26,58,0,0" Click="ShowTitlesButton_Click" Grid.Column="2" Grid.Row="1"/>
+        <Button Content="Add Book" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="AddBookButton_Click" Grid.Column="2" Margin="26,25,0,0" Grid.Row="1"/>
+        <ListBox Name="bookListBox" HorizontalAlignment="Left" VerticalAlignment="Center" Width="246" Height="200" Margin="131,0,0,0" Grid.Column="2" Grid.Row="1"/>
     </Grid>
 </Window>
 
