@@ -3,19 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\Selin\\Desktop\\dash\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\categories.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:categories.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|c:\\users\\selin\\desktop\\dash\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\categories.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:categories.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|dash||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|c:\\users\\selin\\desktop\\dash\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\categories.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:categories.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|dash||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\bookdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,10 +42,6 @@
       "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\categories.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:categories.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -53,11 +57,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Dashboard.xaml",
               "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\Dashboard.xaml",
               "RelativeDocumentMoniker": "Dashboard.xaml",
@@ -69,19 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-05T14:16:12.261Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "Categories.xaml",
               "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\Categories.xaml",
               "RelativeDocumentMoniker": "Categories.xaml",
@@ -89,7 +81,25 @@
               "RelativeToolTip": "Categories.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-05T21:37:49.498Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-05T14:16:12.261Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -97,20 +107,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAADwvxkAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAtwBkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-05T14:16:11.959Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "dash",
               "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\dash.csproj",
               "RelativeDocumentMoniker": "dash.csproj",
@@ -121,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "BookDataContext.cs",
               "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\BookDataContext.cs",
               "RelativeDocumentMoniker": "BookDataContext.cs",
@@ -133,19 +143,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Categories.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\Categories.xaml.cs",
               "RelativeDocumentMoniker": "Categories.xaml.cs",
               "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\Categories.xaml.cs",
               "RelativeToolTip": "Categories.xaml.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwCsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T21:42:58.051Z"
+              "WhenOpened": "2025-04-05T21:42:58.051Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Dashboard.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\Dashboard.xaml.cs",
               "RelativeDocumentMoniker": "Dashboard.xaml.cs",
@@ -157,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\App.config",
               "RelativeDocumentMoniker": "App.config",
@@ -169,18 +180,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
               "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-05T17:24:10.557Z"
+              "WhenOpened": "2025-04-05T17:24:10.557Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAiwHgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-07T15:19:24.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
