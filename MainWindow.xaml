@@ -48,7 +48,7 @@
         Width="400" Height="75" Margin="1,10,0,0" 
         CornerRadius="20" BorderBrush="White" BorderThickness="2">
             <Image x:Name="search" Stretch="UniformToFill" 
-           Source="/images/serach.png" Margin="198,8,-746,-103"/>
+           Source="/images/serach.png" Margin="244,8,-769,-103"/>
         </Border>
         <Border x:Name="sideBar"  BorderBrush="White" HorizontalAlignment="Left" Height="670" VerticalAlignment="Top" Width="239" BorderThickness="0,0,1,0" Grid.RowSpan="2">
             <Border.Background>
@@ -67,7 +67,7 @@
                 </StackPanel>
             </Frame.Content>
         </Frame>-->
-        <StackPanel Margin="0,125,974,60" HorizontalAlignment="Right" Width="196">
+        <StackPanel Margin="0,125,974,10" HorizontalAlignment="Right" Width="196">
             <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10">
                 <Hyperlink>Home</Hyperlink>
             </TextBlock>
@@ -78,8 +78,7 @@
                 <Hyperlink Click="GoToCategories_Click">Categories</Hyperlink>
             </TextBlock>
         </StackPanel>
-        <Button Content="Show Titles" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="373,198,0,0" Click="ShowTitlesButton_Click"/>
-        <Button Content="Add Book" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="AddBookButton_Click" Margin="244,200,0,0"/>
+        <!--<Button Content="Show Titles" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="373,198,0,0" Click="ShowPopularTitlesButton_Click"/>-->
         <!--<ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Column="2" Margin="145,0,0,20" Grid.Row="1" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" RenderTransformOrigin="-0.011,0.505">
             <ItemsControl Name="bookListBox" Margin="131,0,0,0" Width="121">
                 <ItemsControl.ItemsPanel>
@@ -100,7 +99,7 @@
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
         </ScrollViewer>-->
-        <ItemsControl x:Name="bookListBox" Margin="226,5,27,84" Grid.Row="1">
+        <ItemsControl x:Name="bookListBox" Margin="264,10,562,79" Grid.Row="1" Background="Beige">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel Orientation="Horizontal" />
@@ -118,7 +117,26 @@
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
-        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="264,10,27,20" Grid.Row="1"/>
+
+        <ItemsControl x:Name="charactersListBox" Background="#FFE7DCF5" Margin="665,10,30,345" Grid.Row="1">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="DarkGray" BorderThickness="1" Margin="8" Padding="10" Width="150" Height="60" CornerRadius="5" Background="#F9F9F9">
+                        <TextBlock Text="{Binding}" 
+                                TextWrapping="Wrap" 
+                                HorizontalAlignment="Center" 
+                                VerticalAlignment="Center"
+                                FontWeight="SemiBold"/>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
 
         <!--<ListBox Name="bookListBox" HorizontalAlignment="Left" VerticalAlignment="Center" Width="246" Height="200" Margin="131,0,0,0" Grid.Column="2" Grid.Row="1"/>-->
     </Grid>
