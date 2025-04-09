@@ -1,3 +1,3 @@
-﻿Harry Potter|Harry Potter and the Sorcerer's Stone|J.K. Rowling
-Trice Prior|Divergent|Veronica Roth
-Katniss Everdeen|The Hunger Games|Suzanne Collins
+﻿Harry Potter|Harry Potter and the Sorcerer's Stone|J.K. Rowling|The Boy Who Lived; an orphan raised by unkind relatives who discovers he’s a wizard on his 11th birthday. Loyal, brave, and compassionate.|Proficient in magic, Parseltongue, excellent at Defense Against the Dark Arts, Invisibility Cloak and Elder Wand.|8/10
+Tris Prior|Divergent|Veronica Roth|A brave and determined teen born in a faction-based dystopia. She chooses Dauntless and discovers she is Divergent – not fitting into one faction.|Divergent traits allow her to resist mind control; skilled in combat, firearms, and strategy.|7.5/10
+Katniss Everdeen|The Hunger Games|Suzanne Collins|The "Girl on Fire"; a survivalist and hunter from District 12 who volunteers for the Hunger Games to save her sister.|Expert archer, resourceful, strong survival instincts, inspiring leader.|9/10

@@ -1,0 +1,58 @@
+﻿<Window x:Class="dash.BookInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dash"
+        mc:Ignorable="d"
+        Title="BookInfo" Height="700" Width="1200">
+    <Window.Background>
+        <SolidColorBrush Color="#F8F8F8"/>
+    </Window.Background>
+    <Window.Resources>
+        <!-- Reference the custom Imperial Script font -->
+        <FontFamily x:Key="ManropeFont">pack://application:,,,/fonts/#Manrope</FontFamily>
+    </Window.Resources>
+    <Grid x:Name="windowGrid" HorizontalAlignment="Center" Width="1200" Margin="0,0,0,-6">
+        <Grid.RowDefinitions>
+
+
+            <RowDefinition Height="249*"/>
+            <RowDefinition Height="505*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+        </Grid.ColumnDefinitions>
+
+        <Border HorizontalAlignment="Left" VerticalAlignment="Top" 
+    Width="400" Height="75" Margin="1,10,0,0" 
+    CornerRadius="20" BorderBrush="White" BorderThickness="2">
+            <Image x:Name="search" Stretch="UniformToFill" 
+       Source="/images/serach.png" Margin="244,8,-769,-103"/>
+        </Border>
+        <Border x:Name="sideBar"  BorderBrush="White" HorizontalAlignment="Left" Height="670" VerticalAlignment="Top" Width="239" BorderThickness="0,0,1,0" Grid.RowSpan="2">
+            <Border.Background>
+                <SolidColorBrush Color="#F1F1FA"/>
+            </Border.Background>
+            <Label Content="bookTook" Height="32" Margin="10,33,0,0" VerticalAlignment="Top" 
+            FontSize="18" 
+            FontFamily="{StaticResource ManropeFont}" Foreground="#FF101720" RenderTransformOrigin="0.537,1.428" HorizontalAlignment="Left" Width="94"/>
+        </Border>
+
+        <StackPanel Margin="0,125,974,10" HorizontalAlignment="Right" Width="196">
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10">
+            <Hyperlink Click="GoToHome_Click">Home</Hyperlink>
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10">
+            <Hyperlink Click="GoToDashboard_Click">Dashboard</Hyperlink>
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10">
+            <Hyperlink Click="GoToCategories_Click">Categories</Hyperlink>
+            </TextBlock>
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>
