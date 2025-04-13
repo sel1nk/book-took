@@ -26,7 +26,7 @@ namespace dash
             ImportDatasets(@"C:\Users\Selin\Desktop\dash\popularCharacters.txt", "PopularCharacters", false);
             ImportDatasets(@"C:\Users\Selin\Desktop\dash\books.txt", "Books", true);
             ImportDatasets(@"C:\Users\Selin\Desktop\dash\trending.txt", "TrendingBooks", true);
-            
+
         }
         public void DeleteAllBooks(string tableName)
         {
@@ -69,7 +69,8 @@ namespace dash
                         Title TEXT,
                         Author TEXT,
                         PageNumber INTEGER,
-                        Genre TEXT
+                        Genre TEXT,
+                        Summary TEXT
                         )";
                         using (var tableCommand = new SQLiteCommand(createTableQuery, connection))
                         {
@@ -110,15 +111,17 @@ namespace dash
                                 string author = parts[1].Trim();
                                 int pageNumber = int.TryParse(parts[2].Trim(), out int pn) ? pn : 0;
                                 string genre = parts[3].Trim();
+                                string summary = parts[4].Trim();
 
-                                string insertQuery = $@"INSERT INTO {tableName} (Title, Author, PageNumber, Genre)
-                                           VALUES (@Title, @Author, @PageNumber, @Genre)";
+                            string insertQuery = $@"INSERT INTO {tableName} (Title, Author, PageNumber, Genre, Summary)
+                                           VALUES (@Title, @Author, @PageNumber, @Genre, @Summary)";
                                 using (var command = new SQLiteCommand(insertQuery, connection))
                                 {
                                     command.Parameters.AddWithValue("@Title", title);
                                     command.Parameters.AddWithValue("@Author", author);
                                     command.Parameters.AddWithValue("@PageNumber", pageNumber);
                                     command.Parameters.AddWithValue("@Genre", genre);
+                                    command.Parameters.AddWithValue("@Summary", summary);
                                     command.ExecuteNonQuery();
                                 }
                             }

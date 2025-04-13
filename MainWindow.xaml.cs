@@ -85,8 +85,8 @@ namespace dash
         {
             var border = sender as Border;
             var bookTitle = (border?.DataContext ?? "Unknown").ToString();
-            MessageBox.Show($"Clicked: {bookTitle}");
-            var bookInfo = new BookInfo();
+            //MessageBox.Show($"Clicked: {bookTitle}");
+            var bookInfo = new BookInfo(bookTitle);
             bookInfo.Show();
             this.Close();
         }
@@ -95,10 +95,13 @@ namespace dash
         {
             var border = sender as Border;
             var chName = (border?.DataContext ?? "Unknown").ToString();
-            MessageBox.Show($"Clicked: {chName}");
+            //MessageBox.Show($"Clicked: {chName}");
             var characterinfo = new CharacterInfo(chName);
+            Application.Current.MainWindow = characterinfo;
             characterinfo.Show();
-            this.Close();
+            this.Close(); // fine as long as CharacterInfo becomes MainWindow
+            //characterinfo.Show();
+            //this.Close();
         }
 
 

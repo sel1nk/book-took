@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.SQLite;
+using System.IO;
 
 namespace dash
 {
@@ -19,9 +21,12 @@ namespace dash
     /// </summary>
     public partial class BookInfo : Window
     {
-        public BookInfo()
+        private string book;
+        public BookInfo(string bookTitle)
         {
             InitializeComponent();
+            book = bookTitle;
+            ShowBookInfo();
         }
         private void GoToDashboard_Click(object sender, RoutedEventArgs e)
         {
@@ -46,6 +51,60 @@ namespace dash
 
             // Close the current window (MainWindow)
             this.Close();
+        }
+
+        private void ShowBookInfo()
+        {
+            //characterInfoBox.Items.Clear(); // Clear the list before showing new titles
+            bookInfoBox.Items.Clear();
+            bookImageBox.Items.Clear();
+            //characterBox.Items.Add(characterName);
+            //characterImageBox.Items.Clear();
+            string connectionString = "Data Source=books.db;Version=3;";
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                string selectCharacterBoxQuery = "SELECT Title, Author, PageNumber, Genre, Summary FROM AllTimesPopular WHERE Title = @title";
+
+                using (var command = new SQLiteCommand(selectCharacterBoxQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@title", book);
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string name = reader["Title"].ToString();
+                            string author = reader["Author"].ToString();
+                            string pagenmb = reader["PageNumber"].ToString();
+                            string genre = reader["Genre"].ToString();
+                            string sum = reader["Summary"].ToString();
+                            string bookDetails = $"{name}\n{author}\nPage number: {pagenmb}\nGenre: {genre}\n{sum}";
+                            bookInfoBox.Items.Add(bookDetails);
+                            //bookInfoBox.Items.Add(name);
+                            //bookInfoBox.Items.Add(author);
+                            //bookInfoBox.Items.Add(pagenmb);
+                            //bookInfoBox.Items.Add(genre);
+
+                            //characterBox.Items.Add($"Name: {name}\n"); // Add to the ListBox
+                            //characterBox.Items.Add("\n"); //ISE YARAMIYOR!!!
+                            //characterBox.Items.Add($"Title: {title}\n");
+                            //characterBox.Items.Add("\n");
+                            //characterBox.Items.Add($"Author: {author}\n");
+                            //characterBox.Items.Add("\n");
+
+                            //string desc = reader["Description"].ToString();
+                            //string powers = reader["Powers"].ToString();
+                            //string strength = reader["Strength"].ToString();
+                            //characterInfoBox.Items.Add(desc + "\n");
+                            //characterInfoBox.Items.Add(powers + "\n");
+                            //characterInfoBox.Items.Add(" ");
+                            //characterInfoBox.Items.Add(strength + "\n");
+                        }
+                    }
+                }
+
+            }
         }
     }
 }

@@ -27,6 +27,7 @@ namespace dash
         {
             InitializeComponent();
             characterName = chName;
+            ShowPopularTitles();
         }
 
         private void GoToDashboard_Click(object sender, RoutedEventArgs e)
@@ -57,41 +58,41 @@ namespace dash
         private void ShowPopularTitles()
         {
             //characterInfoBox.Items.Clear(); // Clear the list before showing new titles
-            //characterBox.Items.Clear();
+            characterBox.Items.Clear();
+            characterInfoBox.Items.Clear();
+            //characterBox.Items.Add(characterName);
             //characterImageBox.Items.Clear();
-            //string connectionString = "Data Source=books.db;Version=3;";
-            //using (var connection = new SQLiteConnection(connectionString))
-            //{
-            //    connection.Open();
-            //    string selectCharacterNameQuery = "SELECT Name FROM AllTimesPopular";
-            //    string selectCharacterBookQuery = "SELECT Book FROM AllTimesPopular";
-            //    string selectAuthorQuery = "SELECT Author FROM AllTimesPopular";
-            //    string selectDescriptionQuery = "SELECT Description FROM AllTimesPopular";
-            //    string selectPowersQuery = "SELECT Name Powers AllTimesPopular";
-            //    string selectStrengthQuery = "SELECT Strength FROM AllTimesPopular";
-            //    using (var command = new SQLiteCommand(selectCharacterNameQuery, connection))
-            //    {
-            //        using (var reader = command.ExecuteReader())
-            //        {
-            //            while (reader.Read())
-            //            {
-            //                string title = reader.GetString(0);
-            //                characterInfoBox.Items.Add(title); // Add to the ListBox
-            //            }
-            //        }
-            //    }
-            //    using (var command = new SQLiteCommand(selectCharacterBookQuery, connection))
-            //    {
-            //        using (var reader2 = command.ExecuteReader())
-            //        {
-            //            while (reader2.Read())
-            //            {
-            //                string name = reader2.GetString(0);
-            //                characterInfoBox.Items.Add(name); // Add to the ListBox
-            //            }
-            //        }
-            //    }
-            //}
+            string connectionString = "Data Source=books.db;Version=3;";
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                string selectCharacterBoxQuery = "SELECT Name, Title, Author, Description, Powers, Strength FROM PopularCharacters WHERE Name = @name";
+                
+                using (var command = new SQLiteCommand(selectCharacterBoxQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@name", characterName);
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string name = reader["Name"].ToString();
+                            string title = reader["Title"].ToString();
+                            string author = reader["Author"].ToString();
+                            string desc = reader["Description"].ToString();
+                            string powers = reader["Powers"].ToString();
+                            string strength = reader["Strength"].ToString();
+
+                            string chBox = $"{name}\n{title}\nBy {author}";
+                            string chInfoBox = $"{desc}\nPowers: {powers}\nStrength Level: {strength}";
+
+                            characterBox.Items.Add(chBox);
+                            characterInfoBox.Items.Add(chInfoBox);
+                        }
+                    }
+                }
+                
+            }
         }
     }
 }

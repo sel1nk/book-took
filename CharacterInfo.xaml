@@ -52,7 +52,7 @@ CornerRadius="20" BorderBrush="White" BorderThickness="2">
             </TextBlock>
         </StackPanel>
 
-        <ItemsControl x:Name="characterBox" Margin="264,186,615,79" Grid.Row="1" Background="Beige">
+        <ItemsControl x:Name="characterBox" Margin="264,186,615,79" Grid.Row="1" Background="Beige" >
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel Orientation="Horizontal" />
@@ -60,17 +60,13 @@ CornerRadius="20" BorderBrush="White" BorderThickness="2">
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <!--<Border Cursor="Hand" BorderBrush="DarkGray" BorderThickness="1" Margin="10" Padding="10" Width="150" Height="60" CornerRadius="5" Background="#F9F9F9">
-                        <TextBlock Text="{Binding}" 
-                       TextWrapping="Wrap" 
-                       HorizontalAlignment="Center" 
-                       VerticalAlignment="Center"
-                       FontWeight="SemiBold"/>
-                    </Border>-->
+                    <StackPanel>
+                        <TextBlock Text="{Binding}" TextWrapping="Wrap" />
+                    </StackPanel>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
-        <ItemsControl x:Name="characterInfoBox" Margin="622,212,257,79" Background="Beige" Grid.RowSpan="2">
+        <ItemsControl x:Name="characterInfoBox" Margin="622,212,38,79" Background="Beige" Grid.RowSpan="2">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel Orientation="Horizontal" />
@@ -78,14 +74,10 @@ CornerRadius="20" BorderBrush="White" BorderThickness="2">
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
-                    <!--<Border Cursor="Hand"  BorderBrush="DarkGray" BorderThickness="1" Margin="10" Padding="10" Width="150" Height="60" CornerRadius="5" Background="#F9F9F9">
-                        <TextBlock Text="{Binding}" 
-                            TextWrapping="Wrap" 
-                            HorizontalAlignment="Center" 
-                            VerticalAlignment="Center"
-                            FontWeight="SemiBold"/>
-                    </Border>-->
-                </DataTemplate>
+                <StackPanel>
+                    <TextBlock Text="{Binding}" TextWrapping="Wrap" />
+                </StackPanel>
+            </DataTemplate>
             </ItemsControl.ItemTemplate>
         </ItemsControl>
         <ItemsControl x:Name="characterImageBox" Margin="264,212,615,281" Background="Beige" Grid.RowSpan="2">
