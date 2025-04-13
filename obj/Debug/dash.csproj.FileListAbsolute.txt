@@ -39,3 +39,7 @@ C:\Users\Selin\Desktop\dash\bin\Debug\System.Buffers.xml
 C:\Users\Selin\Desktop\dash\bin\Debug\System.Memory.xml
 C:\Users\Selin\Desktop\dash\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Selin\Desktop\dash\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Selin\Desktop\dash\obj\Debug\BookInfo.g.cs
+C:\Users\Selin\Desktop\dash\obj\Debug\CharacterInfo.g.cs
+C:\Users\Selin\Desktop\dash\obj\Debug\BookInfo.baml
+C:\Users\Selin\Desktop\dash\obj\Debug\CharacterInfo.baml

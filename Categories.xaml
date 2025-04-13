@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:dash"
         mc:Ignorable="d"
-        Title="Categories" Height="350" Width="525">
+        Title="Categories" Height="700" Width="1200">
+
+
     <Window.Background>
         <SolidColorBrush Color="#F8F8F8"/>
     </Window.Background>
@@ -13,51 +15,100 @@
         <!-- Reference the custom Imperial Script font -->
         <FontFamily x:Key="ManropeFont">pack://application:,,,/fonts/#Manrope</FontFamily>
     </Window.Resources>
-    <Grid>
+    <!--<Viewbox Stretch="Uniform">-->
+    <Grid x:Name="windowGrid" HorizontalAlignment="Center" Width="1200" Margin="0,0,0,-6">
         <Grid.RowDefinitions>
-            <RowDefinition Height="85*"/>
+
+
             <RowDefinition Height="249*"/>
+            <RowDefinition Height="505*"/>
+
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="117*"/>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="407*"/>
+
         </Grid.ColumnDefinitions>
 
         <Border HorizontalAlignment="Left" VerticalAlignment="Top" 
-    Width="400" Height="75" Margin="1,10,0,0" 
-    CornerRadius="20" BorderBrush="White" BorderThickness="2" Grid.Column="2">
+        Width="400" Height="75" Margin="1,10,0,0" 
+        CornerRadius="20" BorderBrush="White" BorderThickness="2">
             <Image x:Name="search" Stretch="UniformToFill" 
-       Source="/images/serach.png"/>
+           Source="/images/serach.png" Margin="198,8,-746,-103"/>
         </Border>
-        <Border x:Name="sideBar"  BorderBrush="White" HorizontalAlignment="Center" Height="334" VerticalAlignment="Top" Width="114" BorderThickness="0,0,1,0" Grid.RowSpan="2">
+        <Border x:Name="sideBar"  BorderBrush="White" HorizontalAlignment="Left" Height="670" VerticalAlignment="Top" Width="239" BorderThickness="0,0,1,0" Grid.RowSpan="2">
             <Border.Background>
                 <SolidColorBrush Color="#F1F1FA"/>
             </Border.Background>
             <Label Content="bookTook" Height="32" Margin="10,33,0,0" VerticalAlignment="Top" 
-            FontSize="18" 
-            FontFamily="{StaticResource ManropeFont}" Foreground="#FF101720" RenderTransformOrigin="0.537,1.428" HorizontalAlignment="Left" Width="94"/>
+                FontSize="18" 
+                FontFamily="{StaticResource ManropeFont}" Foreground="#FF101720" RenderTransformOrigin="0.537,1.428" HorizontalAlignment="Left" Width="94"/>
         </Border>
         <!--<Frame x:Name="MainFrame" NavigationUIVisibility="Hidden">
-        <Frame.Content>
-            <StackPanel>
-                <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,123,0,0" FontSize="10">
-                    <Hyperlink Click="GoToDashboard_Click">Dashboard</Hyperlink>
-                </TextBlock>
-            </StackPanel>
-        </Frame.Content>
-    </Frame>-->
-        <StackPanel Margin="10,58,6,49" Grid.Row="1">
+            <Frame.Content>
+                <StackPanel>
+                    <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,123,0,0" FontSize="10">
+                        <Hyperlink Click="GoToDashboard_Click">Dashboard</Hyperlink>
+                    </TextBlock>
+                </StackPanel>
+            </Frame.Content>
+        </Frame>-->
+        <StackPanel Margin="0,125,974,10" HorizontalAlignment="Right" Width="196">
             <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10">
-            <Hyperlink Click="GoToHome_Click">Home</Hyperlink>
+                <Hyperlink Click="GoToHome_Click">Home</Hyperlink>
             </TextBlock>
             <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10">
-            <Hyperlink Click="GoToDashboard_Click">Dashboard</Hyperlink>
+                <Hyperlink Click="GoToDashboard_Click">Dashboard</Hyperlink>
             </TextBlock>
             <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="10">
-            <Hyperlink>Categories</Hyperlink>
+                <Hyperlink>Categories</Hyperlink>
             </TextBlock>
         </StackPanel>
+        <Button Content="All Books" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="894,203,0,0" Click="ShowTitlesButton_Click"/>
+        <Button Content="Trending" HorizontalAlignment="Left" Height="20" Margin="700,203,0,0" VerticalAlignment="Top" Width="90" Click="TrendingButton_Click"/>
+        <Button Content="All Times Popular" HorizontalAlignment="Center" Height="20" Margin="0,203,0,0" VerticalAlignment="Top" Width="127" Click="PopularButton_Click"/>
 
+        <!--<ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Column="2" Margin="145,0,0,20" Grid.Row="1" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" RenderTransformOrigin="-0.011,0.505">
+            <ItemsControl Name="bookListBox" Margin="131,0,0,0" Width="121">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border BorderBrush="DarkGray" BorderThickness="1" Margin="10" Padding="10" Width="150" Height="60" CornerRadius="5" Background="#F9F9F9">
+                            <TextBlock Text="{Binding}" 
+                               TextWrapping="Wrap" 
+                               HorizontalAlignment="Center" 
+                               VerticalAlignment="Center"
+                               FontWeight="SemiBold"/>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>-->
+        <ItemsControl x:Name="bookListBox" Margin="226,5,27,84" Grid.Row="1">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="DarkGray" BorderThickness="1" Margin="10" Padding="10" Width="150" Height="60" CornerRadius="5" Background="#F9F9F9">
+                        <TextBlock Text="{Binding}" 
+                               TextWrapping="Wrap" 
+                               HorizontalAlignment="Center" 
+                               VerticalAlignment="Center"
+                               FontWeight="SemiBold"/>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="264,10,27,20" Grid.Row="1"/>
+
+        <!--<ListBox Name="bookListBox" HorizontalAlignment="Left" VerticalAlignment="Center" Width="246" Height="200" Margin="131,0,0,0" Grid.Column="2" Grid.Row="1"/>-->
     </Grid>
+    <!--</Viewbox>-->
 </Window>
+
+

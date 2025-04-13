@@ -26,10 +26,7 @@ namespace dash
         public MainWindow()
         {
             InitializeComponent();
-            InitializeDatabase();
-            DeleteAllBooks();
-            string filePath = @"C:\Users\Selin\Desktop\dash\books.txt";
-            ImportBooksFromFile(filePath);
+            ShowPopularTitles();
         }
         
         private void GoToDashboard_Click(object sender, RoutedEventArgs e)
@@ -49,162 +46,17 @@ namespace dash
             this.Close();
         }
 
-        public void ImportBooksFromFile(string filePath)
-        {
-            string connectionString = @"Data Source=books.db;Version=3;";
-
-            try
-            {
-                // Open SQLite connection
-                using (var connection = new SQLiteConnection(connectionString))
-                {
-                    connection.Open();
-
-                    // Create table if it doesn't exist
-                    string createTableQuery = @"CREATE TABLE IF NOT EXISTS Books (
-                                            Id INTEGER PRIMARY KEY AUTOINCREMENT, 
-                                            Title TEXT, 
-                                            Author TEXT, 
-                                            PageNumber INTEGER)";
-                    using (var command = new SQLiteCommand(createTableQuery, connection))
-                    {
-                        command.ExecuteNonQuery();
-                    }
-
-                    // Read the file line by line
-                    string[] lines = File.ReadAllLines(filePath);
-
-                    // Loop through each line and insert into the database
-                    foreach (string line in lines)
-                    {
-                        // Split the line into title, author, and page number
-                        string[] parts = line.Split('|');
-                        if (parts.Length == 3)
-                        {
-                            string title = parts[0].Trim();
-                            string author = parts[1].Trim();
-                            int pageNumber = 0;
-                            if (int.TryParse(parts[2].Trim(), out pageNumber))
-                            {
-                                // Insert the book into the database
-                                string insertQuery = @"INSERT INTO Books (Title, Author, PageNumber) 
-                                               VALUES (@Title, @Author, @PageNumber)";
-                                using (var insertCommand = new SQLiteCommand(insertQuery, connection))
-                                {
-                                    insertCommand.Parameters.AddWithValue("@Title", title);
-                                    insertCommand.Parameters.AddWithValue("@Author", author);
-                                    insertCommand.Parameters.AddWithValue("@PageNumber", pageNumber);
-                                    insertCommand.ExecuteNonQuery();
-                                }
-                            }
-                            else
-                            {
-                                Console.WriteLine($"Invalid page number for book: {title}");
-                            }
-                        }
-                        else
-                        {
-                            Console.WriteLine($"Invalid format in line: {line}");
-                        }
-                    }
-                    MessageBox.Show("Books successfully imported.");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"An error occurred: {ex.Message}");
-            }
-        }
-
-
-
-public void InitializeDatabase()
-    {
-        string connectionString = "Data Source=books.db;Version=3;";
-        using (var connection = new SQLiteConnection(connectionString))
-        {
-            connection.Open();
-            string createTableQuery = "CREATE TABLE IF NOT EXISTS Books (Id INTEGER PRIMARY KEY AUTOINCREMENT, Title TEXT, Author TEXT, PageNumber INTEGER)";
-            using (var command = new SQLiteCommand(createTableQuery, connection))
-            {
-                command.ExecuteNonQuery();
-            }
-        }
-            string currentDirectory = Directory.GetCurrentDirectory();
-            MessageBox.Show("Current directory: " + currentDirectory);
-
-        }
-        public void DeleteAllBooks()
-        {
-            string connectionString = @"Data Source=books.db;Version=3;";
-
-            using (var connection = new SQLiteConnection(connectionString))
-            {
-                connection.Open();
-
-                // Delete all records from the Books table
-                string deleteQuery = "DELETE FROM Books";
-
-                using (var command = new SQLiteCommand(deleteQuery, connection))
-                {
-                    command.ExecuteNonQuery();
-                }
-                MessageBox.Show("All records deleted successfully.");
-            }
-        }
-
-        public void AddBook(string title, string author, int pageNumber)
-        {
-            string connectionString = "Data Source=books.db;Version=3;";
-            using (var connection = new SQLiteConnection(connectionString))
-            {
-                connection.Open();
-                string insertQuery = "INSERT INTO Books (Title, Author, PageNumber) VALUES (@Title, @Author, @PageNumber)";
-                using (var command = new SQLiteCommand(insertQuery, connection))
-                {
-                    command.Parameters.AddWithValue("@Title", title);
-                    command.Parameters.AddWithValue("@Author", author);
-                    command.Parameters.AddWithValue("@PageNumber", pageNumber);
-                    command.ExecuteNonQuery();
-                }
-            }
-        }
-        public void DisplayBookTitles()
-        {
-            string connectionString = "Data Source=books.db;Version=3;";
-            using (var connection = new SQLiteConnection(connectionString))
-            {
-                connection.Open();
-                string selectQuery = "SELECT Title FROM Books";
-                using (var command = new SQLiteCommand(selectQuery, connection))
-                {
-                    using (var reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            string title = reader.GetString(0);
-                            // Display the title. You can update a ListBox or TextBlock in your UI
-                            MessageBox.Show(title); // For now, just show in a message box
-                        }
-                    }
-                }
-            }
-        }
-        private void AddBookButton_Click(object sender, RoutedEventArgs e)
-        {
-            // For demonstration, we hardcode a book, but you could get these values from TextBoxes.
-            AddBook("Book Title", "Author Name", 250);
-        }
-
-        private void ShowTitlesButton_Click(object sender, RoutedEventArgs e)
+        private void ShowPopularTitles()
         {
             bookListBox.Items.Clear(); // Clear the list before showing new titles
+            charactersListBox.Items.Clear();
             string connectionString = "Data Source=books.db;Version=3;";
             using (var connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
-                string selectQuery = "SELECT Title FROM Books";
-                using (var command = new SQLiteCommand(selectQuery, connection))
+                string selectPopularTitlesQuery = "SELECT Title FROM AllTimesPopular";
+                string selectPopularCharactersQuery = "SELECT Name FROM PopularCharacters";
+                using (var command = new SQLiteCommand(selectPopularTitlesQuery, connection))
                 {
                     using (var reader = command.ExecuteReader())
                     {
@@ -215,8 +67,42 @@ public void InitializeDatabase()
                         }
                     }
                 }
+                using (var command = new SQLiteCommand(selectPopularCharactersQuery, connection))
+                {
+                    using (var reader2 = command.ExecuteReader())
+                    {
+                        while (reader2.Read())
+                        {
+                            string name = reader2.GetString(0);
+                            charactersListBox.Items.Add(name); // Add to the ListBox
+                        }
+                    }
+                }
             }
         }
+
+        private void GoToBookInfo(object sender, MouseButtonEventArgs e)
+        {
+            var border = sender as Border;
+            var bookTitle = (border?.DataContext ?? "Unknown").ToString();
+            MessageBox.Show($"Clicked: {bookTitle}");
+            var bookInfo = new BookInfo();
+            bookInfo.Show();
+            this.Close();
+        }
+
+        private void GoToCharacterInfo(object sender, MouseButtonEventArgs e)
+        {
+            var border = sender as Border;
+            var chName = (border?.DataContext ?? "Unknown").ToString();
+            MessageBox.Show($"Clicked: {chName}");
+            var characterinfo = new CharacterInfo(chName);
+            characterinfo.Show();
+            this.Close();
+        }
+
+
+
 
 
 

@@ -7,46 +7,56 @@
       "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|dash||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\categories.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:categories.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|c:\\users\\selin\\desktop\\dash\\bookdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:bookdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|c:\\users\\selin\\desktop\\dash\\characterinfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:characterinfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|c:\\users\\selin\\desktop\\dash\\characterinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:characterinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|c:\\users\\selin\\desktop\\dash\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|c:\\users\\selin\\desktop\\dash\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|c:\\users\\selin\\desktop\\dash\\popularcharacters.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:popularcharacters.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|c:\\users\\selin\\desktop\\dash\\bookinfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:bookinfo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|c:\\users\\selin\\desktop\\dash\\bookinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:bookinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\categories.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:categories.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\categories.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:categories.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\popular.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:popular.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|c:\\users\\selin\\desktop\\dash\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+      "AbsoluteMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|C:\\Users\\Selin\\Desktop\\dash\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{59B65466-C548-4FA1-A2C1-4CFC3E6688DE}|dash.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -60,7 +70,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Dashboard.xaml",
               "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\Dashboard.xaml",
               "RelativeDocumentMoniker": "Dashboard.xaml",
@@ -73,20 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-05T14:16:12.261Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Categories.xaml",
               "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\Categories.xaml",
               "RelativeDocumentMoniker": "Categories.xaml",
@@ -98,76 +95,140 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-05T14:16:12.261Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dash",
-              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\dash.csproj",
-              "RelativeDocumentMoniker": "dash.csproj",
-              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\dash.csproj",
-              "RelativeToolTip": "dash.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-06T16:50:24.254Z",
+              "DocumentIndex": 8,
+              "Title": "BookInfo.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\BookInfo.xaml.cs",
+              "RelativeDocumentMoniker": "BookInfo.xaml.cs",
+              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\BookInfo.xaml.cs",
+              "RelativeToolTip": "BookInfo.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwDAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T13:22:14.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BookDataContext.cs",
-              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\BookDataContext.cs",
-              "RelativeDocumentMoniker": "BookDataContext.cs",
-              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\BookDataContext.cs",
-              "RelativeToolTip": "BookDataContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CharacterInfo.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\CharacterInfo.xaml.cs",
+              "RelativeDocumentMoniker": "CharacterInfo.xaml.cs",
+              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\CharacterInfo.xaml.cs*",
+              "RelativeToolTip": "CharacterInfo.xaml.cs*",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwFsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T14:27:58.25Z",
+              "WhenOpened": "2025-04-09T13:19:47.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "popularCharacters.txt",
+              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\popularCharacters.txt",
+              "RelativeDocumentMoniker": "popularCharacters.txt",
+              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\popularCharacters.txt",
+              "RelativeToolTip": "popularCharacters.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-09T13:14:31.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "CharacterInfo.xaml",
+              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\CharacterInfo.xaml",
+              "RelativeDocumentMoniker": "CharacterInfo.xaml",
+              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\CharacterInfo.xaml*",
+              "RelativeToolTip": "CharacterInfo.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-09T13:05:10.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookInfo.xaml",
+              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\BookInfo.xaml",
+              "RelativeDocumentMoniker": "BookInfo.xaml",
+              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\BookInfo.xaml",
+              "RelativeToolTip": "BookInfo.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-09T13:03:09.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "popular.txt",
+              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\popular.txt",
+              "RelativeDocumentMoniker": "popular.txt",
+              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\popular.txt",
+              "RelativeToolTip": "popular.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-08T16:44:55.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-07T15:19:24.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAAFcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T14:16:11.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Categories.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\Categories.xaml.cs",
               "RelativeDocumentMoniker": "Categories.xaml.cs",
               "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\Categories.xaml.cs",
               "RelativeToolTip": "Categories.xaml.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwCsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwBYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-05T21:42:58.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Dashboard.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\Dashboard.xaml.cs",
-              "RelativeDocumentMoniker": "Dashboard.xaml.cs",
-              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\Dashboard.xaml.cs",
-              "RelativeToolTip": "Dashboard.xaml.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAkwB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T21:11:43.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\App.config",
-              "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\App.config",
-              "RelativeToolTip": "App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-04-05T17:24:13.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -179,28 +240,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
               "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAAwFMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-05T17:24:08.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Selin\\Desktop\\dash\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAADwvxkAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T14:16:11.959Z",
               "EditorCaption": ""
             }
           ]
